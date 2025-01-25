@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -35,4 +40,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.tv-container {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f5f5f5;
+  width: 300px;
+}
+
+.tv-screen {
+  background-color: #000;
+  color: #0f0;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.tv-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.control-group {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.control-group h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004085;
 }
